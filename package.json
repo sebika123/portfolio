@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "resend": "^6.1.3"
-=======
   "name": "sebika-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -79,6 +75,5 @@
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
->>>>>>> 1919e8a21d04ce830a48f33a59190079accf323f
   }
 }

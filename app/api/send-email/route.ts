@@ -3,7 +3,6 @@ import { Resend } from "resend";
 export const dynamic = "force-dynamic"; // ensure dynamic route
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
-console.log("🚀 ~ env.RESEND_API_KEY:", resend);
 
 export async function POST(req: Request) {
   try {

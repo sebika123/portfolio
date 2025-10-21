@@ -1,18 +1,36 @@
-import React from 'react';
-import { Box, Container, Grid, Typography, Card, CardContent, Chip, Link as MuiLink } from '@mui/material';
-import { ExternalLink } from 'lucide-react';
-import { projects } from '@/lib/data';
-
+import React from "react";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  Chip,
+  Link as MuiLink,
+} from "@mui/material";
+import { ExternalLink } from "lucide-react";
+import { projects } from "@/lib/data";
 
 const Projects = () => {
   return (
-    <Box sx={{ py: 10, bgcolor: '#f9fafb' }}>
+    <Box sx={{ py: 10, bgcolor: "#f9fafb" }}>
       <Container>
         <Box textAlign="center" mb={8}>
-          <Typography variant="h4" fontWeight="bold" color="text.primary" gutterBottom>
+          <Typography
+            variant="h4"
+            fontWeight="bold"
+            color="text.primary"
+            gutterBottom
+          >
             Featured Projects
           </Typography>
-          <Typography variant="h6" color="text.secondary" maxWidth="600px" mx="auto">
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            maxWidth="600px"
+            mx="auto"
+          >
             A showcase of my recent work and contributions to various projects
           </Typography>
         </Box>
@@ -24,18 +42,18 @@ const Projects = () => {
                 elevation={3}
                 sx={{
                   borderRadius: 3,
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
+                  transition: "all 0.3s ease",
+                  "&:hover": {
                     boxShadow: 6,
-                    transform: 'translateY(-4px)',
+                    transform: "translateY(-4px)",
                   },
-                  overflow: 'hidden',
+                  overflow: "hidden",
                 }}
               >
                 <Box
                   sx={{
-                    position: 'relative',
-                    overflow: 'hidden',
+                    position: "relative",
+                    overflow: "hidden",
                     height: 192,
                   }}
                 >
@@ -44,37 +62,47 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     sx={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      transition: 'transform 0.3s ease',
-                      '&:hover': {
-                        transform: 'scale(1.05)',
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      transition: "transform 0.3s ease",
+                      "&:hover": {
+                        transform: "scale(1.05)",
                       },
                     }}
                   />
                   <Box
                     sx={{
-                      position: 'absolute',
+                      position: "absolute",
                       inset: 0,
-                      background: 'linear-gradient(to top, rgba(0,0,0,0.2), transparent)',
+                      background:
+                        "linear-gradient(to top, rgba(0,0,0,0.2), transparent)",
                     }}
                   />
                 </Box>
 
                 <CardContent>
-                  <Typography variant="h6" fontWeight="bold" color="text.primary" gutterBottom>
+                  <Typography
+                    variant="h6"
+                    fontWeight="bold"
+                    color="text.primary"
+                    gutterBottom
+                  >
                     {project.title}
                   </Typography>
 
-                  <Typography variant="body2" color="text.secondary" sx={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 3,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    mb: 2
-                  }}>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      mb: 2,
+                    }}
+                  >
                     {project.description}
                   </Typography>
 
@@ -85,8 +113,8 @@ const Projects = () => {
                         label={tech}
                         size="small"
                         sx={{
-                          bgcolor: 'purple.100',
-                          color: 'purple.700',
+                          bgcolor: "purple.100",
+                          color: "purple.700",
                           fontWeight: 500,
                         }}
                       />
@@ -99,18 +127,20 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       sx={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        color: 'primary.main',
+                        display: "inline-flex",
+                        alignItems: "center",
+                        color: "primary.main",
                         fontWeight: 500,
-                        textDecoration: 'none',
-                        transition: 'color 0.2s ease',
-                        '&:hover': {
-                          color: 'primary.dark',
+                        textDecoration: "none",
+                        transition: "color 0.2s ease",
+                        "&:hover": {
+                          color: "primary.dark",
                         },
                       }}
                     >
-                      <ExternalLink style={{ width: 16, height: 16, marginRight: 4 }} />
+                      <ExternalLink
+                        style={{ width: 16, height: 16, marginRight: 4 }}
+                      />
                       Live Demo
                     </MuiLink>
                   )}

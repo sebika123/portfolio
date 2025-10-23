@@ -1,13 +1,11 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import ThemeRegistry from './ThemeRegistry';
-
-const inter = Inter({ subsets: ['latin'] });
+import "./globals.css";
+import type { Metadata } from "next";
+import ThemeRegistry from "./ThemeRegistry";
 
 export const metadata: Metadata = {
-  title: 'Sebika Nepal | Frontend Developer',
-  description: 'Portfolio of Sebika Nepal, a frontend developer specializing in Next.js, React, and modern web technologies.',
+  title: "Sebika Nepal | Frontend Developer",
+  description:
+    "Portfolio of Sebika Nepal, a frontend developer specializing in Next.js, React, and modern web technologies.",
 };
 
 export default function RootLayout({
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>

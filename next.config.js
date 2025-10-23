@@ -4,6 +4,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+   experimental: {
+    optimizePackageImports: ['@mui/material', '@mui/icons-material'], // add explicitly
+  },
   images: { unoptimized: true },
 };
 

@@ -103,7 +103,7 @@ export const projects: Project[] = [
     image:
       "https://images.unsplash.com/photo-1560258018-c7db7645254e?auto=format&fit=crop&w=1350&q=80", // Stormy weather (verified)
     technologies: ["NextJs", "Supabase", "TypeScript", "Stripe"],
-    link: "https://stage-fmt-web.draftserver.com/",
+    link: "https://stage-web.findmytherapy.com.au/",
   },
 ];
 

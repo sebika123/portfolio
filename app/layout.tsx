@@ -21,8 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Analytrics */}
-
+        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-8PVB9LVSH8`}
@@ -46,7 +45,7 @@ export default function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4217692983616180"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </head>
       <body>

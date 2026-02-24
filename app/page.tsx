@@ -7,14 +7,13 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import AdBanner from "@/components/ui/AdBanner";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
-      <AdBanner />
+
       <About />
       <Skills />
       <Experience />
